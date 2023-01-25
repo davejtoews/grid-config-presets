@@ -1,0 +1,29 @@
+{
+    "name": "davejtoews/grid-config-presets",
+    "description": "A handful of readymade Silverstripe GridField config models",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DaveJToews\\GridConfigPresets\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Toews",
+            "email": "davejtoews@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "silverstripe/framework": "^4.0",
+        "symbiote/silverstripe-gridfieldextensions": "^3.0",
+        "fromholdio/silverstripe-gridfield-limiter": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
+    }
+}
