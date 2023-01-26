@@ -18,7 +18,7 @@ class GridFieldConfig_LimiterSortable extends GridFieldConfig_RecordButtonsAfter
      * @param string|null $buttonName
      * @param string $sortColumn
      */
-    public function __construct($limit, $columns, $buttonName, $sortColumn)
+    public function __construct($limit = 10, $columns = null, $buttonName = null, $sortColumn = "Sort")
     {
         parent::__construct($columns, $buttonName, $sortColumn);
 

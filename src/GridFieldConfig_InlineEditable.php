@@ -24,7 +24,7 @@ class GridFieldConfig_InlineEditable extends GridFieldConfig
      * @param GridFieldAddNewInlineButton|null $button
      * @param string|null $sortColumn - Column used by GridFieldOrderableRows no sorting if left blank
      */
-    public function __construct($columns, $button, $sortColumn)
+    public function __construct($columns = null, $button = null, $sortColumn = null)
     {
         parent::__construct();
 

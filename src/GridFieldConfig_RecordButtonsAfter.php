@@ -25,7 +25,7 @@ class GridFieldConfig_RecordButtonsAfter extends GridFieldConfig
      * @param string|null $buttonName - Add Item button label
      * @param GridFieldDataColumns|null $columns
      */
-    public function __construct($columns, $buttonName, $sortColumn)
+    public function __construct($columns = null, $buttonName = null, $sortColumn = null)
     {
         parent::__construct();
 
