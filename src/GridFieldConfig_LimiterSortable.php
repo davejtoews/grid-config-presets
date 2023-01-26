@@ -14,12 +14,13 @@ class GridFieldConfig_LimiterSortable extends GridFieldConfig_RecordButtonsAfter
     /**
      *
      * @param integer $limit
+     * @param GridFieldDataColumns|null $columns
      * @param string|null $buttonName
      * @param string $sortColumn
      */
-    public function __construct($limit,  $buttonName, $sortColumn = 'Sort')
+    public function __construct($limit, $columns, $buttonName, $sortColumn)
     {
-        parent::__construct();
+        parent::__construct($columns, $buttonName, $sortColumn);
 
         $this->addComponent(new GridFieldOrderableRows($sortColumn));
         $this->removeComponentsByType(GridFieldAddNewButton::class);
