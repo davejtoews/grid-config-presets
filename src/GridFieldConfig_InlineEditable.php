@@ -7,7 +7,6 @@ use SilverStripe\Forms\GridField\GridFieldConfig;
 use SilverStripe\Forms\GridField\GridFieldDataColumns;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldToolbarHeader;
-use SilverStripe\Versioned\VersionedGridFieldState\VersionedGridFieldState;
 use Symbiote\GridFieldExtensions\GridFieldAddNewInlineButton;
 use Symbiote\GridFieldExtensions\GridFieldEditableColumns;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
@@ -35,7 +34,6 @@ class GridFieldConfig_InlineEditable extends GridFieldConfig
         $this->addComponent($columns ? $columns : new GridFieldEditableColumns());
         $this->addComponent(new GridFieldDeleteAction());
         $this->addComponent($button ? $button : new GridFieldAddNewInlineButton('buttons-after-right'));
-        $this->addComponent(new VersionedGridFieldState());
         if ($sortColumn) {
             $this->addComponent(new GridFieldOrderableRows($sortColumn));
         }
