@@ -4,4 +4,4 @@ A collection of configurations making use of [orderable rows](https://github.com
 
 ## Install
 
-`composer require davejtoews/grid-presets`
+`composer require davejtoews/grid-config-presets`
