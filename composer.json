@@ -16,9 +16,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "silverstripe/framework": "^4.0",
-        "symbiote/silverstripe-gridfieldextensions": "^3.0",
-        "fromholdio/silverstripe-gridfield-limiter": "^1.0"
+        "silverstripe/framework": "^5.0",
+        "symbiote/silverstripe-gridfieldextensions": "^4.0",
+        "fromholdio/silverstripe-gridfield-limiter": "^2.0"
     },
     "config": {
         "allow-plugins": {

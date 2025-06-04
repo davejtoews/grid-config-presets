@@ -1,3 +1,4 @@
 vendor
 resources
 composer.lock
+.DS_Store
